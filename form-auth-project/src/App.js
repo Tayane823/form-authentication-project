@@ -1,19 +1,25 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Register from './pages/register/Register';
+import Login from './pages/login/Login';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Working with authentication</h1>
-
       <BrowserRouter>
+        <h1>Working with authentication</h1>
         <Routes>
-          <Route path='/'></Route>
-          <Route path='/register'></Route>
-          <Route path='/login'></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/register' element={<Register />}></Route>
+          <Route path='/login' element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
-
+      
     </div>
   );
 }

@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*CSS FORM*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background-color: rgba(75, 73, 71, 0.11);
+  width: 30%;
+  height: 35vh;
+  margin: auto;
+  padding: 10px;
+}
+
+form label {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+form label input {
+  width: 90%;
+  align-items: center;
+  padding: 10px;
+}
+
+form button {
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+}
