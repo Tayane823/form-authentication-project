@@ -8,7 +8,7 @@ import {
 } from 'firebase/auth'
 import { useState, useEffect } from 'react'
 
-export const useAuthentication = () => {
+export const useAuthenticator = () => {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState("");
 
@@ -21,9 +21,7 @@ export const useAuthentication = () => {
             return;
         }
     }
-
-    setLoading(true)
-
+    //Função que cria um usuário
     const createUser = async (data) => {
 
         checkIfIsCancelled()
@@ -59,6 +57,6 @@ export const useAuthentication = () => {
         createUser,
         error,
         loading
-    }
+    };
 
 }

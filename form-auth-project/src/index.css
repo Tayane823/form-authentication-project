@@ -17,7 +17,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start;
+  align-items: flex-start;
   background-color: rgba(75, 73, 71, 0.11);
   width: 30%;
   height: 35vh;
@@ -29,7 +29,7 @@ form label {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 100%;
 }
 
